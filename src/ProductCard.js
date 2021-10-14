@@ -2,7 +2,7 @@ import {CardGroup, Card} from "react-bootstrap";
 
 const ProductCard = ({products, dataFunc, data}) => {
     
-    let productCards = products[0].map((product) => {
+    let productCards = products?.[0]?.map((product) => {
         return(
             <Card>
                 <Card.Body>
